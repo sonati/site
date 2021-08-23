@@ -66,6 +66,18 @@
     object-fit: contain;
 }
 
+@media screen and (max-width: 960px) {
+    .do_it_with img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .bg_ready {
+        width: auto;
+    }
+}
+
 .ready {
     width: 60%;
 }
@@ -178,8 +190,20 @@
 }
 
 .bg_ready {
-    width: 100%;
+    width: 80%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 960px) {
+    .bg_ready {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .bg_ready {
+        width: 100%;
+    }
 }
 
 
