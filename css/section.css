@@ -1,0 +1,138 @@
+.section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img_center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.desktop {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.mobile {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1250px) {
+    .desktop {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .desktop {
+        width: 90%;
+    }
+}
+/*Первая секция 
+================= <
+*/
+
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.intro img {
+    object-fit: cover;
+}
+
+.max {
+    width: 100%;
+}
+
+.min {
+    width: 80%;
+}
+/*Вторая секция 
+=================<
+*/
+
+.poloski {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top {
+    margin-top: 5%;
+}
+
+.poloski img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/*Stripes 
+===========<
+*/
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery span {
+    padding: 15px 0;
+    font-family: "GOTHIC";
+    font-size: 32px;
+    color: #E4EAEA;
+    opacity: .9;
+}
+
+@media screen and (max-width: 470px) {
+    .gallery span {
+        font-size: 16px;
+    }
+}
+/* gallery 
+============== <
+*/
+
+.gallery_work {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery_work img {
+    width: 100%;
+    object-fit: contain;
+}
+/* Gallery works
+============== <
+*/

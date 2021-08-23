@@ -1,0 +1,120 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 2.2rem 3.2rem;
+    background-color: rgba(134, 134, 134, 0.274);
+}
+
+@media screen and (max-width: 970px) {
+    .header {
+        padding: .8rem 2.2rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .header {
+        padding: .8rem 1.4rem;
+    }
+}
+/* Первое лого >*/
+.size115 {
+    position: relative;
+    width: 13rem;
+}
+
+.logo a img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+@media screen and (max-width: 970px) {
+    .logo {
+        display: none;
+    }
+
+    .size115 {
+        width: auto;
+    }
+}
+/* Первое лого <*/
+/* Второе лого >*/
+.logo-text img {
+    height: 4.5rem;
+}
+
+@media screen and (max-width: 970px) {
+    .logo-text img {
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .logo-text img {
+        height: 1.8rem;
+    }
+}
+/* Второе лого <*/
+/* Контакты >*/
+.contacts {
+    height: 4.5rem;
+}
+
+.contacts a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.contacts a:hover {
+    color: #d72872
+}
+
+.contacts img {
+    animation: 6s linear 0s normal none infinite running twist_phone;
+}
+
+@keyframes twist_phone {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.contacts span {
+    font-size: 1.8rem;
+    font-family: "GOTHIC";
+}
+
+@media screen and (max-width: 970px) {
+    .contacts {
+        height: 3.5rem;
+    }
+
+    .contacts img {
+        height: 3.5rem;
+    }
+
+    .contacts span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .contacts {
+        height: 2.5rem;
+    }
+
+    .contacts img {
+        height: 2.5rem;
+    }
+}
+/* Контакты <*/
