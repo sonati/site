@@ -77,6 +77,10 @@
 }
 
 @media screen and (max-width: 970px) {
+    .max {
+        width: 970px;
+        height: 546px;
+    }
     .min {
         width: 776px;
         height: 546px;
@@ -84,6 +88,10 @@
 }
 
 @media screen and (max-width: 470px) {
+    .max {
+        width:414px;
+        height: 233px;
+    }
     .min {
         width: 331px;
         height: 188px;
