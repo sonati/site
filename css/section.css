@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: 100vh;
 }
 
@@ -25,7 +25,8 @@
 
 .dominates {
     position: absolute;
-    width: 50%;
+    object-fit: cover;
+    /* width: 50%; */
     animation: 8s linear 0s normal none infinite running dominates;
 }
 
@@ -54,8 +55,7 @@
     } 
 
     .dominates {
-        position: absolute;
-        width: 100%;
+        /* width: 100%; */
         margin-top: -41px;
     }
 
