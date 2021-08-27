@@ -101,6 +101,17 @@
     height: 100%;
 }
 
+@media screen and (max-width: 470px) {
+    .intro {
+        position: relative;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+    }
+}
+
 /*Вторая секция 
 ================= <
 */
