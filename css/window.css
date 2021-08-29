@@ -1,5 +1,5 @@
 .window {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -43,6 +43,8 @@
     z-index: 1010;
     visibility: visible;
     opacity: 1;
+    touch-action: none;
+    -ms-touch-action: none;
 }
 /* Активация всего контейнера 
 =================== <
@@ -89,8 +91,10 @@
 }
 
 .back {
-    position: absolute;
-    bottom: 7%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
     left: 50%;
     transform: translate(-50%);
 }
@@ -144,10 +148,6 @@
         padding: 15px;
     }
 
-    .back {
-        bottom: 5%;
-    }
-
     .icon_x {
         width: 50px;
         height: 50px;
@@ -181,10 +181,6 @@
         padding: 10px;
     }
 
-    .back {
-        bottom: 5%;
-    }
-
     .icon_x {
         width: 60px;
         height: 60px;
@@ -216,10 +212,6 @@
     .text {
         font-size: 18px;
         padding: 15px;
-    }
-
-    .back {
-        bottom: 18%;
     }
 
     .icon_x {

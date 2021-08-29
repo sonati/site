@@ -137,3 +137,31 @@
 /* Контакты 
 =================== <
 */
+
+.fixed {
+    position: fixed;
+    z-index: 1011;
+    bottom: 60px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0);
+    animation: 6s linear 0s normal none infinite running twist_phone;
+}
+
+.fixed a {
+    display: block;
+}
+
+.fixed.hidden {
+    display: none;
+}
+
+@keyframes twist_phone {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
