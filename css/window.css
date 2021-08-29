@@ -1,0 +1,225 @@
+.window {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1010;
+    top: 0;
+    left: 0;
+    padding: 45px 45px;
+    background-color: #070A0A;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+/* Основной блок 
+=================== <
+*/
+
+.no-hidden {
+    overflow: hidden;
+}
+/* Удаляем скролл 
+=================== <
+*/
+
+.window_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: url(/img/contact_poloski.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    padding: 25px 0;
+}
+/* Блок контейнер 
+=================== <
+*/
+
+.active {
+    z-index: 1010;
+    visibility: visible;
+    opacity: 1;
+}
+/* Активация всего контейнера 
+=================== <
+*/
+
+.box_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+}
+
+.box_item a {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+}
+
+.box_item img {
+    width: 15%;
+}
+
+.text_color {
+    font-family: "GOTHIC"; 
+    font-size: 42px;
+    font-weight: 400;
+    color: #B72768;
+}
+
+.text {
+    font-family: "GOTHIC"; 
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    padding: 15px;
+}
+
+.back {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.back a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon_x {
+    width: 80px;
+    height: 80px;
+    fill: #e4eaea;
+    transition: all .3s linear;
+    padding: 10px;
+}
+
+
+.icon_x:hover {
+    fill: #b72768;
+}
+
+@media screen and (max-width: 970px) {
+    .window {
+        padding: 15px 15px;
+    }
+
+    .window_wrapper {
+        padding: 15px 0;
+    }
+
+    .box_item {
+        height: 25%;
+        margin-bottom: 2%;
+    }
+
+    .box_item img {
+        width: 12%;
+    }
+
+    .text_color {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .back {
+        bottom: 5%;
+    }
+
+    .icon_x {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .window {
+        padding: 15px 15px;
+    }
+
+    .window_wrapper {
+        padding: 15px 0;
+    }
+
+    .box_item {
+        height: 25%;
+    }
+
+    .box_item img {
+        width: 12%;
+    }
+
+    .text_color {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .back {
+        bottom: 5%;
+    }
+
+    .icon_x {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .window_wrapper {
+        background: url(/img/contact_poloski_mob.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:center;
+        padding: 25px 0;
+    }
+
+    .box_item {
+        height: 25%;
+    }
+
+    .box_item img {
+        width: 12%;
+    }
+
+    .text_color {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .back {
+        bottom: 5%;
+    }
+
+    .icon_x {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+}
