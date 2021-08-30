@@ -1,4 +1,4 @@
-$( "a" ).click(function( event ) {
+$("#open").click(function( event ) {
     event.preventDefault();
 });
 
